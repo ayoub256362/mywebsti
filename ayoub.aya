@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Memories</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fbe6f0;  /* Light pink background */
+            height: 100%;
+        }
+
+        /* Header Styling */
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #ff66b2;  /* Soft pink for the title */
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Container for images and videos */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Background Style */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff0f5;  /* Soft pink background */
+            z-index: -1;
+        }
+
+        /* Image and Video Common Styles */
+        .image, .video {
+            position: absolute;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Soft shadow for a floating effect */
+            transition: transform 0.3s ease-in-out;  /* Smooth transition for hover effect */
+        }
+
+        .image:hover, .video:hover {
+            transform: scale(1.1);  /* Slightly enlarge on hover */
+        }
+
+        /* Image Styles */
+        .image {
+            max-width: 150px;  /* Limit size for consistency */
+        }
+
+        .image1 {
+            top: 10%;
+            left: 20%;
+        }
+
+        .image2 {
+            top: 30%;
+            left: 60%;
+        }
+
+        .image3 {
+            top: 60%;
+            left: 10%;
+        }
+
+        .image4 {
+            top: 70%;
+            left: 50%;
+        }
+
+        .image5 {
+            top: 20%;
+            left: 75%;
+        }
+
+        .image6 {
+            top: 50%;
+            left: 35%;
+        }
+
+        /* Video Styles */
+        .video {
+            max-width: 150px;
+        }
+
+        .video1 {
+            top: 25%;
+            left: 10%;
+        }
+
+        .video2 {
+            top: 45%;
+            left: 60%;
+        }
+
+        /* Optional Background Color (Sweet Pink Vibe) */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff0f5;  /* Light pink background for a warm vibe */
+            z-index: -1;
+        }
+
+        /* Optional Additional Styles (Heart effect or subtle animations) */
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Heartbeat effect on images */
+        .image1, .image2, .image3, .image4, .image5, .image6 {
+            animation: heartbeat 2s infinite;
+        }
+
+        /* Video Styling */
+        video {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Special Memories</h1>
+
+    <div class="container">
+        <!-- Background -->
+        <div class="background"></div>
+
+        <!-- Images -->
+        <img src="ayoub.3.jpeg" alt="Memory 1" class="image image1">
+        <img src="ayoub.8.jpeg" alt="Memory 2" class="image image2">
+        <img src="ayoub.7.jpeg" alt="Memory 3" class="image image3">
+        <img src="ayoub.6.jpeg" alt="Memory 4" class="image image4">
+        <img src="ayoub.5.jpeg" alt="Memory 5" class="image image5">
+        <img src="ayoub.4.jpeg" alt="Memory 6" class="image image6">
+        
+        <!-- Videos -->
+        <video class="video video1" controls>
+            <source src="ayoub.1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video class="video video
